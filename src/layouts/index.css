@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+body {
+  background-color: aliceblue;
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: white;
+}
+
+.Hero {
+  height: 500px;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+}
+
+.HeroGroup {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 150px 50px;
+  text-align: center;
+}
+
+.Avocado h1 {
+  margin: 0;
+  color: white;
+  font-size: 60px;
+  line-height: 1.2;
+}
+
+.Hero p {
+  font-size: 30px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.Hero a {
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 9px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+}
+
+.Avocado1 a {
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 9px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Avocado1 a:hover {
+  background: white;
+  color: black;
+}
+
+.Avocado1 {
+  height: 500px;
+  background-color: #63954e;
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle;
+}
+
+.Avocado1-Group {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 150px 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.Avocado2 {
+  height: 500px;
+  background-color: #535f37;
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle;
+}
+
+.Avocado2-Group {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 150px 50px;
+  text-align: center;
+}
+
+.Avocado3 {
+  height: 500px;
+  background-color: #4e5426;
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle;
+}
+
+.Avocado3-Group {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 150px 50px;
+  text-align: center;
+}
+
+.Avocado4 {
+  height: 500px;
+  background-color: #3b3920;
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle;
+}
+
+.Avocado4-Group {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 150px 50px;
+  text-align: center;
+}
+
+.Avocado5 {
+  height: 500px;
+  background-color: #222011;
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle;
+}
+
+.Avocado5-Group {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 150px 50px;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .Avocado1-Group {
+    padding: 100px 20px;
+  }
+  .Avocado1 h1 {
+    font-size: 3px;
+  }
+
+  .Avocado1 p {
+    font-size: 1px;
+  }
+}
+
+@keyframes AvocadoAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+h1 {
+  animation: AvocadoAnimation;
+  animation-duration: 3s;
+  animation-delay: 0.1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+p {
+  opacity: 0;
+  animation: AvocadoAnimation 3s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+}
